@@ -1,3 +1,8 @@
+import "./Footer.css";
+import githubIcon from "../../assets/github.svg";
+import facebookIcon from "../../assets/facebook-icon.svg";
+
+
 function Footer() {
     return (
       <footer className="footer">

@@ -1,3 +1,10 @@
+import { useLocation } from "react-router-dom";
+import "./Navigation.css";
+import logoutIcon from "../../assets/logout.svg";
+import altIcon from "../../assets/alt-logout.svg";
+import menuIcon from "../../assets/menuIcon.svg";
+import menuIconBlack from "../../assets/menuIconBlack.svg";
+
 function Navigation({
     handleLoginClick,
     isLoggedIn,
@@ -70,7 +77,7 @@ function Navigation({
           className="navigation__mobile-button"
           style={{
             backgroundImage: `url(${
-              location.pathname === "/saved-news" ? menuBlackIcon : menuIcon
+              location.pathname === "/saved-news" ? menuIconBlack : menuIcon
             })`,
           }}
           onClick={handleMobileMenuClick}
