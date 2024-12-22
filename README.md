@@ -27,4 +27,4 @@
 - **News API**: Delivering real-time articles directly to your fingertips.  
 
 ## Explore Now  
-Experience the app live: [News Explorer]
+Experience the app live: [News Explorer](https://J-Kay-808.github.io/news-explorer-frontend/).
