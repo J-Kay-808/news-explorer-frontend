@@ -1,0 +1,155 @@
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+  }
+  
+  .modal_opened {
+    visibility: visible;
+  }
+  
+  .modal__close {
+    position: absolute;
+    background-size: contain;
+    bottom: calc(100% + 1px);
+    left: calc(100% + 1px);
+    background: transparent url("../../assets/close-button.svg") no-repeat center;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .modal__content {
+    width: 100%;
+    max-width: 430px;
+    box-sizing: border-box;
+    background-color: #ffff;
+    position: relative;
+    padding: 34px 36px 28px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form {
+    display: flex;
+    width: 430px;
+    height: 380px;
+    top: 207px;
+    left: 505px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+  }
+  
+  .modal__title {
+    margin: 0;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 28.13px;
+    text-align: left;
+    margin-bottom: 22px;
+    padding: 0;
+  }
+  
+  .modal__label {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    color: rgba(47, 113, 229, 1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    text-align: left;
+  }
+  
+  .modal__input {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: left;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+    margin: 0 0 41px;
+    padding: 10px 0 10px;
+    color: black;
+  }
+  
+  .modal__sign-in-button {
+    width: 360px;
+    height: 64px;
+    border: none;
+    border-radius: 100px;
+    color: rgba(182, 188, 191, 1);
+    background-color: rgba(230, 232, 235, 1);
+    padding: 0;
+    margin-bottom: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  
+  .modal__sign-in-button:hover {
+    background-color: rgba(47, 113, 229, 1);
+    color: white;
+  }
+  
+  .modal__alt-button {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .modal__sign-up-button {
+    margin: 0;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: rgba(47, 113, 229, 1);
+    cursor: pointer;
+  }
+  
+  @media screen and (min-width: 320px) and (max-width: 500px) {
+    .modal__content {
+      width: 320px;
+      height: 560px;
+      border: 1px 0px 0px 0px;
+      padding: 16px;
+    }
+    .modal__input {
+      margin: 0 0 30px;
+    }
+  
+    .modal__sign-in-button {
+      width: 288px;
+      height: 64px;
+    }
+  
+    .modal__close {
+      right: 1px;
+      left: auto;
+    }
+  }
