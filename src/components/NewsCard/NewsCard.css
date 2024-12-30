@@ -14,7 +14,7 @@
     position: absolute;
     top: 24px;
     right: 24px;
-    background: white url("../../assets/bookmark.svg") no-repeat center;
+    background: white url("../../assets/bookmark-blank.svg") no-repeat center;
     height: 40px;
     width: 40px;
     border: none;
@@ -25,14 +25,14 @@
   }
   
   .card__bookmark:hover {
-    background-image: url("../../assets/bookmark-hover.svg");
+    background-image: url("../../assets/bookkmark-filled.svg");
   }
   
   .card__delete-btn {
     position: absolute;
     top: 24px;
     right: 24px;
-    background: white url("../../assets/delete-btn.svg") no-repeat center;
+    background: white url("../../assets/trash-icon.svg") no-repeat center;
     height: 40px;
     width: 40px;
     border: none;
@@ -43,7 +43,7 @@
   }
   
   .card__delete-btn:hover {
-    background-image: url("../../assets/delete-btn-hover.svg");
+    background-image: url("../../assets/trash-hover.svg");
   }
   
   .card__keyword {

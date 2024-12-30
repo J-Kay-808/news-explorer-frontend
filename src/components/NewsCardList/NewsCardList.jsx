@@ -2,6 +2,8 @@ import { useState } from "react";
 import "./NewsCardList.css";
 import NewsCard from "../NewsCard/NewsCard";
 import Preloader from "../Preloader/Preloader";
+import NotFound from "../NotFound/NotFound";
+
 
 function NewsCardList({ articles, isLoading, error, isLoggedIn }) {
   const [visibleCards, setVisibleCards] = useState(3);
@@ -17,6 +19,7 @@ function NewsCardList({ articles, isLoading, error, isLoggedIn }) {
         <h2 className="newscards__title">Search results</h2>
       )}
       {error && <p className="newscards__error">{error}</p>}
+      {articles.length === 0 && !isLoading && !error && <NotFound />}
 
       <ul className="newscards__list">
         {articles.slice(0, visibleCards).map((article, index) => (
