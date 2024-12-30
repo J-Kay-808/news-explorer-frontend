@@ -13,6 +13,8 @@ import SavedNews from "../SavedNews/SavedNews";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SuccessModal from "../SuccessModal/SuccessModal";
+import NotFound from "../NotFound/NotFound";
+
 
 function App() {
   const [activeModal, setActiveModal] = useState("");
