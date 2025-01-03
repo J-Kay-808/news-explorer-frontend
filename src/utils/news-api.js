@@ -6,6 +6,22 @@ const BASE_URL = process.env.NODE_ENV === "production"
   ? "https://nomoreparties.co/news/v2/everything"
   : "https://newsapi.org/v2/everything";
 
+export function fetchNewsArticles(keyword) {
+  return fetch(
+    `${BASE_URL}?q=${keyword}&from=${lastWeek}&to=${today}&pageSize=100&apiKey=${apiKey}`
+  )
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error("Failed to fetch news articles.");
+      }
+      return response.json();
+    })
+    .then((data) => data.articles)
+    .catch((error) => {
+      console.error("Fetch error:", error);
+      throw new Error("An error occurred while fetching news articles.");
+    });
+}
 
 // const BASE_URL =
 // process.env.NODE_ENV === "production"
@@ -30,20 +46,3 @@ const BASE_URL = process.env.NODE_ENV === "production"
 //       throw new Error("An error occurred while fetching news articles.");
 //     });
 // }
-
-export function fetchNewsArticles(keyword) {
-  return fetch(
-    `${BASE_URL}?q=${keyword}&from=${lastWeek}&to=${today}&pageSize=100&apiKey=${apiKey}`
-  )
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Failed to fetch news articles.");
-      }
-      return response.json();
-    })
-    .then((data) => data.articles)
-    .catch((error) => {
-      console.error("Fetch error:", error);
-      throw new Error("An error occurred while fetching news articles.");
-    });
-}
