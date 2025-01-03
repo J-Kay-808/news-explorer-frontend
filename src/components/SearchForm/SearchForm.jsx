@@ -13,8 +13,10 @@ function SearchForm({onSearch}) {
     e.preventDefault();
     if (!keyword) {
       setError("Please enter a keyword");
+      console.error("Keyword is empty!");
     } else {
       setError("");
+      console.log("Calling onSearch with keyword:", keyword);
       onSearch(keyword);
     }
   }
