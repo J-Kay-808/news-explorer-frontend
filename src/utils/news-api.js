@@ -4,9 +4,9 @@
   const lastWeek = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split("T")[0];
   const BASE_URL =
   process.env.NODE_ENV === "production"
-  ? "https://nomoreparties.co/news/v2/everything" // Proxy for production
-  : "https://newsapi.org/v2/everything"; // Direct API for development
-  
+  ? 'www.newsexplorer.chickenkiller.com'
+  : "https://newsapi.org/v2/everything";
+    
   // const BASE_URL = process.env.NODE_ENV === "production"
   //   ? 'www.newsexplorer.chickenkiller.com' :
   //   `https://newsapi.org/v2/everything?q=${keyword}&from=${lastWeek}&to=${today}&pageSize=100&apiKey=${apiKey}`;
