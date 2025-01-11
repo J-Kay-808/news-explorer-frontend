@@ -1,8 +1,29 @@
 .page {
-  color: white;
+  background-color: #fff;
+  font-family: Roboto, "Roboto Slab", Inter, Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 0 clamp(16px, 7.22vw, 106px);
+  position: relative;
 }
 
 .page__content {
-  max-width: 1440px;
   margin: 0 auto;
+  max-width: 1440px;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media screen and (max-width: 800px) {
+  .page {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page {
+    padding: 0 16px;
+  }
 }

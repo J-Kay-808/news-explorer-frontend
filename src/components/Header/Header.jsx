@@ -2,7 +2,7 @@ import Navigation from "../Navigation/Navigation";
 import "./Header.css";
 import { useLocation } from "react-router-dom";
 
-function Header({handleLoginClick, isLoggedIn, handleMobileMenuClick, handleHomeClick, handleSavedArticlesClick, handleLogOut}) {
+function Header({ handleLoginClick, isLoggedIn, handleMobileMenuClick, handleHomeClick, handleSavedArticlesClick, handleLogOut }) {
 
   const location = useLocation();
   const savedNewsRoute = location.pathname === "/saved-news";

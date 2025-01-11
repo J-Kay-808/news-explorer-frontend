@@ -10,6 +10,7 @@ import Main from "../Main/Main";
 import "./App.css";
 import NewsCardList from "../NewsCardList/NewsCardList";
 import SavedNews from "../SavedNews/SavedNews";
+import SavedNewsCardList from "../SavedNewsCardlist/SavedNewsCardList";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SuccessModal from "../SuccessModal/SuccessModal";

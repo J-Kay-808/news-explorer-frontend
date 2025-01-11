@@ -8,8 +8,8 @@
   background-color: white;
 }
 
-.navigation--saved .navigation__home-button,
-.navigation--saved .navigation__saved-articles,
+.navigation--saved .navigation__btn-home,
+.navigation--saved .navigation__btn-saved-articles,
 .navigation--saved .navigation__signin-button,
 .navigation--saved .navigation__logout-button {
   color: black;
@@ -40,7 +40,7 @@
   align-items: stretch;
 }
 
-.navigation__home-button {
+.navigation__btn-home {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -54,8 +54,12 @@
   padding: 0;
 }
 
-.navigation__home--active {
-  border-bottom: 2px solid white;
+.navigation__btn-home--active {
+  border-bottom: 2px solid #fff;
+  font-weight: bold;
+  border-width: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navigation__signin-button {
@@ -75,7 +79,7 @@
   cursor: pointer;
 }
 
-.navigation__saved-articles-button {
+.navigation__btn-saved-articles {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
