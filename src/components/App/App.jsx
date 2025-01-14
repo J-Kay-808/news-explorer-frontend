@@ -15,6 +15,7 @@ import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SuccessModal from "../SuccessModal/SuccessModal";
 import NotFound from "../NotFound/NotFound";
+import MobileNavBar from "../MobileNavBar/MobileNavBar";
 
 
 function App() {
@@ -118,9 +119,8 @@ function App() {
     <>
       <div className="page">
         <div
-          className={`page ${
-            location.pathname === "/saved-news" ? "no-bg" : ""
-          }`}
+          className={`page ${location.pathname === "/saved-news" ? "no-bg" : ""
+            }`}
         >
           <Header
             handleLoginClick={handleLoginClick}
@@ -176,6 +176,16 @@ function App() {
           closeModal={closeModal}
           navigateToLogin={navigateToLogin}
           handleSignUp={handleSignUp}
+        />
+      )}
+
+      {activeModal === "mobile-menu" && (
+        <MobileNavBar
+          isOpen={true}
+          closeModal={closeModal}
+          navigateToLogin={navigateToLogin}
+          handleLoginClick={handleLoginClick}
+          handleHomeClick={handleHomeClick}
         />
       )}
 

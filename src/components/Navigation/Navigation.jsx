@@ -25,8 +25,8 @@ function Navigation({
         <ul className="navigation__list">
           <li className="navigation__item">
             <button
-              className={`navigation__btn-home ${
-                location.pathname === "/" ? "navigation__btn-home--active" : ""
+              className={`navigation__home-button ${
+                location.pathname === "/" ? "navigation__home--active" : ""
               }`}
               onClick={handleHomeClick}
             >
@@ -37,9 +37,9 @@ function Navigation({
             <>
               <li className="navigation__item">
                 <button
-                  className={`navigation__btn-saved-articles ${
+                  className={`navigation__saved-articles-button ${
                     location.pathname === "/saved-news"
-                      ? "navigation__btn-saved-articles--active"
+                      ? "navigation__saved-articles--active"
                       : ""
                   }`}
                   onClick={handleSavedArticlesClick}
