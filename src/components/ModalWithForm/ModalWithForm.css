@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.501);
     visibility: hidden;
   }
   
@@ -62,6 +62,7 @@
     text-align: left;
     margin-bottom: 22px;
     padding: 0;
+    color: #000;;
   }
   
   .modal__label {
@@ -86,6 +87,7 @@
     margin: 0 0 41px;
     padding: 10px 0 10px;
     color: black;
+    background-color: #ffff;
   }
   
   .modal__sign-in-button {

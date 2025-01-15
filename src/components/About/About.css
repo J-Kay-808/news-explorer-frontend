@@ -9,7 +9,8 @@
 
 .about__image-container {
   height: 464px;
-  width: 464px;
+  width: 100%;
+  max-width: 464px;
 }
 
 .about__image {
@@ -61,7 +62,9 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+
+
+@media screen and (max-width: 500px) {
   .about {
     flex-direction: column;
     gap: 24px;

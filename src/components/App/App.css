@@ -2,7 +2,7 @@
   background-color: #fff;
   font-family: Roboto, "Roboto Slab", Inter, Arial, Helvetica, sans-serif;
   color: #fff;
-  padding: 0 clamp(16px, 7.22vw, 106px);
+  padding: 0;
   position: relative;
 }
 
@@ -13,17 +13,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
-
-@media screen and (max-width: 800px) {
-  .page {
-    padding: 0 40px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .page {
-    padding: 0 16px;
-  }
-}

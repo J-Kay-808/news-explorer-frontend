@@ -52,10 +52,11 @@
   color: #fff;
   cursor: pointer;
   padding: 0;
+  border-radius: 0%;
 }
 
-.navigation__home--active {
-  border-bottom: 2px solid white;
+.navigation__home-button-active {
+  border-bottom: 3px solid white;
 
 }
 
@@ -87,9 +88,10 @@
   background: none;
   color: rgba(182, 188, 191, 1);
   cursor: pointer;
+  border-radius: 0%;
 }
 
-.navigation__saved-articles--active {
+.navigation__saved-articles-button-active {
   border-bottom: 3px solid black;
   color: black;
   outline: none;
@@ -128,22 +130,22 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 750px) {
-  .navigation {
-    padding: 0 16px;
-    align-self: center;
-  }
-
-  .navigation__list {
-    display: none;
-    gap: 16px;
-  }
-  .navigation__mobile-button {
-    display: block;
-    width: 24px;
-    height: 24px;
-    background: transparent no-repeat center;
-    border: none;
-    padding: 0;
-  }
+  @media screen and (min-width: 320px) and (max-width: 613px) {
+    .navigation {
+      padding: 0 16px;
+      align-self: center;
+    }
+  
+    .navigation__list {
+      display: none;
+      gap: 16px;
+    }
+    .navigation__mobile-button {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: transparent no-repeat center;
+      border: none;
+      padding: 0;
+    }
 }
