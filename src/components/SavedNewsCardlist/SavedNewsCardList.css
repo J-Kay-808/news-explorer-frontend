@@ -3,10 +3,10 @@
   background-color: rgba(245, 246, 247, 1);
 }
 
-* {
+/* * {
   outline: 1px solid red; 
 }
-
+ */
 .saved-news__container {
   display: flex;
   flex-direction: row;
