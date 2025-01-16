@@ -63,7 +63,7 @@
   border: none;
   cursor: pointer;
 }
-.footer__navigation-link,
+.navigation__link-footer,
 .footer__icon-link {
   text-decoration: none;
   color: inherit;
