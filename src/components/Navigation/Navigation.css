@@ -8,10 +8,10 @@
   background-color: white;
 }
 
-.navigation--saved .navigation__home-button,
-.navigation--saved .navigation__saved-articles,
-.navigation--saved .navigation__signin-button,
-.navigation--saved .navigation__logout-button {
+.navigation--saved .navigation__link_home-button,
+.navigation--saved .navigation__link_saved-articles,
+.navigation--saved .navigation__link_signin-button,
+.navigation--saved .navigation__link_logout-button {
   color: black;
 }
 
@@ -55,7 +55,7 @@
   border-radius: 0%;
 }
 
-.navigation__link_home-button-active {
+.navigation__link_home--active {
   border-bottom: 3px solid white;
 
 }
@@ -91,7 +91,7 @@
   border-radius: 0%;
 }
 
-.navigation__link_saved-articles-button-active {
+.navigation__link_saved-articles--active {
   border-bottom: 3px solid black;
   color: black;
   outline: none;
