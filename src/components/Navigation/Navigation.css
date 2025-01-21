@@ -147,5 +147,6 @@
       background: transparent no-repeat center;
       border: none;
       padding: 0;
+      background-image: url("../../assets/menuIcon.svg");
     }
 }
