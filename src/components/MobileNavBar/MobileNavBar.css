@@ -1,4 +1,4 @@
-.mobile-menu {
+.mobile {
   display: hidden;
   position: fixed;
   top: 0;
@@ -13,11 +13,11 @@
   margin: 0;
 }
 
-.mobile-menu_opened {
+.mobile_opened {
   display: flex;
 }
 
-.mobile-menu__header {
+.mobile__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -25,7 +25,7 @@
   border-bottom: 2px solid rgba(196, 196, 196, 0.2);
 }
 
-.mobile-menu__title {
+.mobile__title {
   font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -35,7 +35,7 @@
   margin: 0;
 }
 
-.mobile-menu__close-button {
+.mobile__close-button {
   background: transparent url("../../assets/close.svg") no-repeat center;
   height: 24px;
   width: 24px;
@@ -43,16 +43,15 @@
   border: none;
 }
 
-.mobile-menu__links {
+.mobile__list {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
   position: relative;
-  
 }
 
-.mobile-menu__link {
+.mobile__links {
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
@@ -65,9 +64,7 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-
-
-.mobile-menu__home-button {
+.mobile__home-button {
   outline: none;
   border: none;
   background: none;
@@ -77,9 +74,7 @@
   cursor: pointer;
 }
 
-
-
-.mobile-menu__saved-articles-button {
+.mobile__saved-articles-button {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   outline: none;
   border: none;
@@ -90,12 +85,11 @@
   cursor: pointer;
 }
 
-.mobile-menu__saved-articles--active {
+.mobile__saved-articles--active {
   border-bottom: 3px solid white;
 }
 
-
-.mobile-menu__sign-in-button {
+.mobile__sign-in-button {
   align-self: center;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 24px;
@@ -108,4 +102,12 @@
   border-radius: 100px;
   margin-left: 16px;
   cursor: pointer;
+}
+
+.mobile__logout-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 230px;
 }

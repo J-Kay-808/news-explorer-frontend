@@ -40,16 +40,19 @@
   align-items: stretch;
 }
 
-.navigation__link_home-button {
+.navigation__link {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  color: #fff;
   margin: 0;
+}
+
+.navigation__link_home-button {
   outline: none;
   border: none;
   background: none;
-  color: #fff;
   cursor: pointer;
   padding: 0;
   border-radius: 0%;
@@ -57,16 +60,10 @@
 
 .navigation__link_home--active {
   border-bottom: 3px solid white;
-
 }
 
 .navigation__link_signin-button {
   align-self: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  color: white;
   background: none;
   outline: 1px solid white;
   padding: 10px 20px;
@@ -78,15 +75,9 @@
 }
 
 .navigation__link_saved-articles-button {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  margin: 0;
   outline: none;
   border: none;
   background: none;
-  color: rgba(182, 188, 191, 1);
   cursor: pointer;
   border-radius: 0%;
 }
@@ -102,11 +93,6 @@
   align-items: center;
   align-self: center;
   gap: 10px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  color: white;
   background: none;
   outline: 1px solid white;
   padding: 10px 20px;
@@ -130,23 +116,23 @@
   cursor: pointer;
 }
 
-  @media screen and (min-width: 320px) and (max-width: 613px) {
-    .navigation {
-      padding: 0 16px;
-      align-self: center;
-    }
-  
-    .navigation__list {
-      display: none;
-      gap: 16px;
-    }
-    .navigation__mobile-button {
-      display: block;
-      width: 24px;
-      height: 24px;
-      background: transparent no-repeat center;
-      border: none;
-      padding: 0;
-      background-image: url("../../assets/menuIcon.svg");
-    }
+@media screen and (min-width: 320px) and (max-width: 613px) {
+  .navigation {
+    padding: 0 16px;
+    align-self: center;
+  }
+
+  .navigation__list {
+    display: none;
+    gap: 16px;
+  }
+  .navigation__mobile-button {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: transparent no-repeat center;
+    border: none;
+    padding: 0;
+    background-image: url("../../assets/menuIcon.svg");
+  }
 }

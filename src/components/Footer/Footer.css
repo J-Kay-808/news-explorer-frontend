@@ -63,8 +63,7 @@
   border: none;
   cursor: pointer;
 }
-.navigation__link-footer,
-.footer__icon-link {
+.footer__navigation_link {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
