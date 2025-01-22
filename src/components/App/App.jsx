@@ -193,6 +193,8 @@ function App() {
           handleHomeClick={handleHomeClick}
           isLoggedIn={isLoggedIn}
           handleSavedArticlesClick={handleSavedArticlesClick}
+          handleLogOut={handleLogOut}
+
 
         />
       )}
