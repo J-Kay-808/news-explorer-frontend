@@ -194,8 +194,6 @@ function App() {
           isLoggedIn={isLoggedIn}
           handleSavedArticlesClick={handleSavedArticlesClick}
           handleLogOut={handleLogOut}
-
-
         />
       )}
 
