@@ -52,16 +52,19 @@
 }
 
 .mobile__links {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
   text-align: center;
-  color: #fff;
   padding: 0;
   list-style-type: none;
   text-align: left;
   width: 288px;
+}
+
+.mobile__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #fff;
 }
 
 .mobile__home-button {
@@ -75,7 +78,6 @@
 }
 
 .mobile__saved-articles-button {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
   outline: none;
   border: none;
   background: none;
@@ -91,14 +93,12 @@
 
 .mobile__sign-in-button {
   align-self: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
   line-height: 24px;
   color: white;
   background: none;
   outline: 1px solid white;
   padding: 16px 116px;
   border: none;
-  width: 288px;
   border-radius: 100px;
   margin-left: 16px;
   cursor: pointer;
