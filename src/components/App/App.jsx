@@ -67,6 +67,10 @@ function App() {
   const handleLoginSubmit = () => {
     setIsLoggedIn(true);
     closeModal();
+    console.log("Login submitted!"); // Log when this function is called
+    setIsLoggedIn(true); // Update the state
+    console.log("LoggedIn state after submit:", true); // Confirm the intended state
+    closeModal(); // Close the modal
   };
 
   const handleLogOut = () => {
@@ -76,6 +80,7 @@ function App() {
 
   const handleLoginClick = () => {
     setActiveModal("login");
+    console.log("Sign In button clicked");
   };
 
   const handleMobileMenuClick = () => {
@@ -186,6 +191,9 @@ function App() {
           navigateToLogin={navigateToLogin}
           handleLoginClick={handleLoginClick}
           handleHomeClick={handleHomeClick}
+          isLoggedIn={isLoggedIn}
+          handleSavedArticlesClick={handleSavedArticlesClick}
+
         />
       )}
 

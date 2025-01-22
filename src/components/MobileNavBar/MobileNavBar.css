@@ -35,6 +35,25 @@
   margin: 0;
 }
 
+.mobile--saved{
+  background-color: #fff;
+}
+
+.mobile--saved .mobile__home-button,
+.mobile--saved .mobile__saved-articles-button,
+.mobile--saved .mobile__signin-button,
+.mobile--saved .mobile__logout-button {
+  color: #fff;
+}
+
+.mobile--saved .mobile__signin-button
+ {
+  background: none;
+  outline: 1px solid black;
+  color: #fff;
+}
+
+
 .mobile__close-button {
   background: transparent url("../../assets/close.svg") no-repeat center;
   height: 24px;
@@ -65,23 +84,24 @@
   line-height: 24px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #fff;
+  outline: none;
+  border: none;
+  background: none;
+
 }
 
 .mobile__home-button {
-  outline: none;
-  border: none;
-  background: none;
-  color: #fff;
   margin: 0px;
-  padding: 16px 16px 22px;
   cursor: pointer;
 }
 
+.mobile__home--active {
+  border-bottom: 3px solid white;
+  border-radius: 0%;
+}
+
+
 .mobile__saved-articles-button {
-  outline: none;
-  border: none;
-  background: none;
-  color: #fff;
   align-self: flex-start;
   text-align: left;
   cursor: pointer;
@@ -89,25 +109,39 @@
 
 .mobile__saved-articles--active {
   border-bottom: 3px solid white;
+  border-radius: 0%;
 }
 
-.mobile__sign-in-button {
+.mobile__signin-button {
   align-self: center;
   line-height: 24px;
-  color: white;
-  background: none;
   outline: 1px solid white;
   padding: 16px 116px;
-  border: none;
   border-radius: 100px;
   margin-left: 16px;
   cursor: pointer;
 }
 
-.mobile__logout-button {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 40px;
-  padding-left: 230px;
+.mobile__logout-icon {
+  height: 24px;
+  width: 24px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
 }
+
+.mobile__logout-button {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  border-radius: 100px;
+  background: none;
+  text-align: center;
+  border-width: 1px;
+  /* border-color: white; */
+  color: white;
+  width: 112px;
+  height: 48px;
+  text-align: center;
+  color: white;}
