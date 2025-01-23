@@ -8,10 +8,10 @@
   background-color: white;
 }
 
-.navigation--saved .navigation__home-button,
-.navigation--saved .navigation__saved-articles,
-.navigation--saved .navigation__signin-button,
-.navigation--saved .navigation__logout-button {
+.navigation--saved .navigation__link_home-button,
+.navigation--saved .navigation__link_saved-articles,
+.navigation--saved .navigation__link_signin-button,
+.navigation--saved .navigation__link_logout-button {
   color: black;
 }
 
@@ -34,37 +34,36 @@
   padding: 0;
 }
 
-.navigation__item {
+.navigation__links {
   display: flex;
   justify-content: center;
   align-items: stretch;
 }
 
-.navigation__home-button {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+.navigation__link {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 500;
   line-height: 24px;
+  color: #fff;
   margin: 0;
+}
+
+.navigation__link_home-button {
   outline: none;
   border: none;
   background: none;
-  color: #fff;
   cursor: pointer;
   padding: 0;
+  border-radius: 0%;
 }
 
-.navigation__home--active {
-  border-bottom: 2px solid white;
+.navigation__link_home--active {
+  border-bottom: 3px solid white;
 }
 
-.navigation__signin-button {
+.navigation__link_signin-button {
   align-self: center;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  color: white;
   background: none;
   outline: 1px solid white;
   padding: 10px 20px;
@@ -75,34 +74,25 @@
   cursor: pointer;
 }
 
-.navigation__saved-articles-button {
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  margin: 0;
+.navigation__link_saved-articles-button {
   outline: none;
   border: none;
   background: none;
-  color: rgba(182, 188, 191, 1);
   cursor: pointer;
+  border-radius: 0%;
 }
 
-.navigation__saved-articles--active {
-  border-bottom: 2px solid black;
+.navigation__link_saved-articles--active {
+  border-bottom: 3px solid black;
   color: black;
+  outline: none;
 }
 
-.navigation__logout-button {
+.navigation__link_logout-button {
   display: flex;
   align-items: center;
   align-self: center;
   gap: 10px;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 24px;
-  color: white;
   background: none;
   outline: 1px solid white;
   padding: 10px 20px;
@@ -143,5 +133,6 @@
     background: transparent no-repeat center;
     border: none;
     padding: 0;
+    background-image: url("../../assets/menuIcon.svg");
   }
 }

@@ -10,10 +10,12 @@ import Main from "../Main/Main";
 import "./App.css";
 import NewsCardList from "../NewsCardList/NewsCardList";
 import SavedNews from "../SavedNews/SavedNews";
+import SavedNewsCardList from "../SavedNewsCardlist/SavedNewsCardList";
 import LoginModal from "../LoginModal/LoginModal";
 import RegisterModal from "../RegisterModal/RegisterModal";
 import SuccessModal from "../SuccessModal/SuccessModal";
 import NotFound from "../NotFound/NotFound";
+import MobileNavBar from "../MobileNavBar/MobileNavBar";
 
 
 function App() {
@@ -65,6 +67,10 @@ function App() {
   const handleLoginSubmit = () => {
     setIsLoggedIn(true);
     closeModal();
+    console.log("Login submitted!"); // Log when this function is called
+    setIsLoggedIn(true); // Update the state
+    console.log("LoggedIn state after submit:", true); // Confirm the intended state
+    closeModal(); // Close the modal
   };
 
   const handleLogOut = () => {
@@ -74,6 +80,7 @@ function App() {
 
   const handleLoginClick = () => {
     setActiveModal("login");
+    console.log("Sign In button clicked");
   };
 
   const handleMobileMenuClick = () => {
@@ -117,9 +124,8 @@ function App() {
     <>
       <div className="page">
         <div
-          className={`page ${
-            location.pathname === "/saved-news" ? "no-bg" : ""
-          }`}
+          className={`page ${location.pathname === "/saved-news" ? "no-bg" : ""
+            }`}
         >
           <Header
             handleLoginClick={handleLoginClick}
@@ -175,6 +181,19 @@ function App() {
           closeModal={closeModal}
           navigateToLogin={navigateToLogin}
           handleSignUp={handleSignUp}
+        />
+      )}
+
+      {activeModal === "mobile-menu" && (
+        <MobileNavBar
+          isOpen={true}
+          closeModal={closeModal}
+          navigateToLogin={navigateToLogin}
+          handleLoginClick={handleLoginClick}
+          handleHomeClick={handleHomeClick}
+          isLoggedIn={isLoggedIn}
+          handleSavedArticlesClick={handleSavedArticlesClick}
+          handleLogOut={handleLogOut}
         />
       )}
 

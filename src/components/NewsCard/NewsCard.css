@@ -4,6 +4,7 @@
     border-radius: 16px;
     background-color: rgba(255, 255, 255, 1);
     position: relative;
+    gap: 16px;
   }
   
   .card__info {
@@ -162,115 +163,115 @@
     padding: 0;
     color: rgba(182, 188, 191, 1);
   }
-  
-  @media screen and (min-width: 613px) and (max-width: 850px) {
-    .card__container {
-      width: 224px;
-      height: 420px;
+
+    @media screen and (min-width: 613px) and (max-width: 850px) {
+      .card__container {
+        width: 224px;
+        height: 420px;
+      }
+    
+      .card__image {
+        width: 224px;
+        height: 150px;
+        margin-bottom: 16px;
+      }
+    
+      .card__delete-confirm {
+        display: none;
+      }
+    
+      .card__save-confirm {
+        display: none;
+      }
+    
+      .card__info {
+        margin: 0 16px 16px;
+      }
+    
+      .card__keyword {
+        top: 8px;
+        left: 8px;
+      }
+    
+      .card__title {
+        max-width: 192px;
+        font-size: 22px;
+        line-height: 24px;
+        margin: 0 0 10px;
+        height: 72px;
+      }
+    
+      .card__description {
+        height: 88px;
+        margin: 0 0 12px;
+      }
+    
+      .card__bookmark {
+        top: 8px;
+        right: 8px;
+      }
+    
+      .card__delete-btn {
+        top: 8px;
+        right: 8px;
+      }
     }
-  
-    .card__image {
-      width: 224px;
-      height: 150px;
-      margin-bottom: 16px;
-    }
-  
-    .card__delete-confirm {
-      display: none;
-    }
-  
-    .card__save-confirm {
-      display: none;
-    }
-  
-    .card__info {
-      margin: 0 16px 16px;
-    }
-  
-    .card__keyword {
-      top: 8px;
-      left: 8px;
-    }
-  
-    .card__title {
-      max-width: 192px;
-      font-size: 22px;
-      line-height: 24px;
-      margin: 0 0 10px;
-      height: 72px;
-    }
-  
-    .card__description {
-      height: 88px;
-      margin: 0 0 12px;
-    }
-  
-    .card__bookmark {
-      top: 8px;
-      right: 8px;
-    }
-  
-    .card__delete-btn {
-      top: 8px;
-      right: 8px;
-    }
-  }
-  
-  @media screen and (min-width: 320px) and (max-width: 613px) {
-    .card__container {
-      width: 288px;
-      height: 440px;
-    }
-    .card__image {
-      width: 288px;
-      height: 196px;
-    }
-  
-    .card__info {
-      margin: 0 16px;
-    }
-  
-    .card__delete-confirm {
-      display: none;
-    }
-    .card__save-confirm {
-      display: none;
-    }
-  
-    .card__date {
-      margin: 0 0 10px;
-    }
-  
-    .card__bookmark {
-      top: 16px;
-      right: 16px;
-    }
-  
-    .card__delete-btn {
-      top: 16px;
-      right: 16px;
-    }
-  
-    .card__keyword {
-      top: 16px;
-      left: 16px;
-    }
-  
-    .card__title {
-      height: 48px;
-      font-size: 22px;
-      font-size: 22px;
-      font-weight: 400;
-      line-height: 24px;
-      margin: 0 0 14px;
-    }
-  
-    .card__description {
-      height: 88px;
-      margin: 0 0 8px;
-    }
-  
-    .card__source {
-      margin: 0;
-    }
+    
+    @media screen and (min-width: 320px) and (max-width: 613px) {
+      .card__container {
+        width: 288px;
+        height: 440px;
+      }
+      .card__image {
+        width: 288px;
+        height: 196px;
+      }
+    
+      .card__info {
+        margin: 0 16px;
+      }
+    
+      .card__delete-confirm {
+        display: none;
+      }
+      .card__save-confirm {
+        display: none;
+      }
+    
+      .card__date {
+        margin: 0 0 10px;
+      }
+    
+      .card__bookmark {
+        top: 16px;
+        right: 16px;
+      }
+    
+      .card__delete-btn {
+        top: 16px;
+        right: 16px;
+      }
+    
+      .card__keyword {
+        top: 16px;
+        left: 16px;
+      }
+    
+      .card__title {
+        height: 48px;
+        font-size: 22px;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 24px;
+        margin: 0 0 14px;
+      }
+    
+      .card__description {
+        height: 88px;
+        margin: 0 0 8px;
+      }
+    
+      .card__source {
+        margin: 0;
+      }
   }

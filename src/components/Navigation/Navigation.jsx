@@ -23,10 +23,10 @@ function Navigation({
         }`}
       >
         <ul className="navigation__list">
-          <li className="navigation__item">
+          <li className="navigation__links">
             <button
-              className={`navigation__home-button ${
-                location.pathname === "/" ? "navigation__home--active" : ""
+              className={`navigation__link navigation__link_home-button ${
+                location.pathname === "/" ? "navigation__link navigation__link_home--active" : ""
               }`}
               onClick={handleHomeClick}
             >
@@ -35,11 +35,11 @@ function Navigation({
           </li>
           {isLoggedIn ? (
             <>
-              <li className="navigation__item">
+              <li className="navigation__links">
                 <button
-                  className={`navigation__saved-articles-button ${
+                  className={`navigation__link navigation__link_saved-articles-button ${
                     location.pathname === "/saved-news"
-                      ? "navigation__saved-articles--active"
+                      ? "navigation__link navigation__link_saved-articles--active"
                       : ""
                   }`}
                   onClick={handleSavedArticlesClick}
@@ -47,9 +47,9 @@ function Navigation({
                   Saved articles
                 </button>
               </li>
-              <li className="navigation__item">
+              <li className="navigation__links">
                 <button
-                  className="navigation__logout-button"
+                  className="navigation__link navigation__link_logout-button"
                   onClick={handleLogOut}
                 >
                   Elise
@@ -62,9 +62,9 @@ function Navigation({
               </li>
             </>
           ) : (
-            <li className="navigation__item">
+            <li className="navigation__links">
               <button
-                className="navigation__signin-button"
+                className="navigation__link navigation__link_signin-button"
                 onClick={handleLoginClick}
               >
                 Sign In

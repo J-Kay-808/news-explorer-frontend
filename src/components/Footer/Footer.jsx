@@ -15,7 +15,7 @@ function Footer() {
               <a
                 href="/"
                 target="_blank"
-                className="footer__navigation-link footer__navigation-link-home"
+                className="footer__navigation_link footer__navigation_link-home"
               >
                 Home
               </a>
@@ -24,7 +24,7 @@ function Footer() {
               <a
                 href="https://www.tripleten.com"
                 target="_blank"
-                className="footer__navigation-link footer__navigation-link-tripleten"
+                className="footer__navigation_link footer__navigation_link-tripleten"
               >
                 TripleTen
               </a>
